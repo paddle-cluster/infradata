@@ -46,6 +46,7 @@ Now that we have an idea about the data packets that are sent and received, we w
 1.	Download the following GeoIP database files: 
 -  <a href="/GeoLite2-ASN.mmdb" download="download">GeoLite2-ASN</a>
 -  <a href="/GeoLite2-Country.mmdb" download="download">GeoLite2-Country</a>
+
 The GeoLite2 data contained in the files is created by MaxMind and available from <a href="https://www.maxmind.com">https://www.maxmind.com</a>.
 (Optional: Go to the Wireshark folder (e.g.: C:\Program Files\Wireshark) Create a folder called “GeoIp” and copy & paste the two files into the new folder) 
 2.	In Wireshark, go to 'Edit→Preferences→Name Resolution'  
