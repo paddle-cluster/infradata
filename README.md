@@ -30,7 +30,7 @@ All traffic on data networks like the internet consists of packets that are smal
 In the second part of this workshop, we will visualize the metadata we collected about the digital data exchanged between your computer and external servers during part 1.
 
 ### Who have you exchanged data with?
-1. Download and open the following <a href="/revealing_digital_infrastructure201103" download>Excel file</a>
+1. Download and open the following <a href="/revealing_digital_infrastructure201103.xlsx" download="download">Excel file</a>
 2. Mac: Go to the "Data" tab of the supplied spreadsheet and select the top left cell
 2. Windows: Go to the "Data" tab of the supplied spreadsheet and select "From Text" in the top left cell ("Get external data") 
 3. Mac: Go to "File"  > "Import", select "CSV file" and click on "Import"
@@ -44,8 +44,8 @@ In the second part of this workshop, we will visualize the metadata we collected
 Now that we have an idea about the data packets that are sent and received, we will look at the geographical distribution. By using the GeoIP we can map the infrastructure that is involved while a platform or service is in use.
 
 1.	Download the following GeoIP database files: 
--  <a href="/GeoLite2-ASN.mmdb" download>GeoLite2-ASN</a>
--  <a href="/GeoLite2-Country.mmdb" download>GeoLite2-Country</a>
+-  <a href="/GeoLite2-ASN.mmdb" download="download">GeoLite2-ASN</a>
+-  <a href="/GeoLite2-Country.mmdb" download="download">GeoLite2-Country</a>
 The GeoLite2 data contained in the files is created by MaxMind and available from <a href="https://www.maxmind.com">https://www.maxmind.com</a>.
 (Optional: Go to the Wireshark folder (e.g.: C:\Program Files\Wireshark) Create a folder called “GeoIp” and copy & paste the two files into the new folder) 
 2.	In Wireshark, go to 'Edit→Preferences→Name Resolution'  
