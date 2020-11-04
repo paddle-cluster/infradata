@@ -1,30 +1,35 @@
-# Revealing digital data infrastructures
-This workshop gives an introduction to how you can do some basic analysis of the data that is exchanged between a computer and online servers when using particular platforms or services (e.g. social media, learning management systems, etc). We will use approaches to uncovering infrastructures, data packet streams and IP geolocation.
+[English](/README.md) | [Svenska](/sv.md) | Deutsche | Espanõl
 
-### What will we look at?
-All traffic on data networks like the internet consists of packets that are small chunks of data. These packets come in many different forms (or protocols) and each have source and destination addresses. To do so, we will look at packets by collecting so-called metadata, which is data that provides information about other data.
-In addition to this, we will look at Internet Protocol (IP) addresses for the source and destination of each packet of data that was exchanged. Using databases that link those IP addresses to geographic locations, we can map the infrastructure that is involved while a platform or service is in use.
+# Avslöjar digitala datainfrastrukturer
+Denna workshop ger en introduktion till hur man kan göra en del grundläggande analyser av data som utbyts mellan en dator och onlineservrar när man använder plattformar eller tjänster (t.ex. sociala medier, lärplattformer osv.). Vi kommer att använda metoder för att avslöja infrastrukturer, datapaketströmmar och IP-geolokalisering.
 
-### What programs will we use?
-During this workshop, we will use Wireshark, Excel and a GeoIP database. 
-We chose Wireshark for this workshop, as it is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.
+### Vad ska vi jobba med?
+All trafik på datanätverk inklusiv Internet består av paket som är små bitar av data. Dessa paket finns i många olika former (eller protokoll) och alla har käll- och destinationsadresser. För att göra det kommer vi att titta på paket genom att samla in så kallade metadata, vilket är data som ger information om annan data.
+Utöver detta kommer vi att titta på IP-adresser (Internet Protocol) för källan och destinationen för varje datapaket som utbyttes. Med hjälp av databaser som länkar dessa IP-adresser till geografiska platser kan vi kartlägga den infrastruktur som är involverad medan en plattform eller tjänst används.
 
-Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
+### Vilka mjukvaror kommer vi att använda?
+Under denna workshop kommer vi att använda Wireshark, Excel och en GeoIP-databas.
+- Vi valde Wireshark för denna workshop, eftersom det är en gratis och öppen källkodspaketanalysator. Den används för felsökning av nätverk, analys, utveckling av programvara och kommunikationsprotokoll och utbildning..
+- Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
+- IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
 
-IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
+## Samlar in metadata
+I den första delen av denna workshop kommer vi att fokusera på att samla in datapaket och metadata.
+All trafik på datanätverk som Internet består av paket som är små bitar av data. Vi kan använda en process som kallas paketsniffning för att samla in dessa bitar av metadata och för att få en känsla av dataflödena utan att titta på innehållet i själva paketen.
 
-## Collecting metadata
-In the first part of this workshop, we will focus on collecting data packets and metadata. 
-All traffic on data networks like the internet consists of packets that are small chunks of data. We can use a process called packet sniffing to collect these pieces of metadata and to get a sense of the flows of data without looking at the content of the packets themselves.
+### Spåra källan och destinationen för den utbytta datan
+1. Ladda ner nätverksanalysverktyget [Wireshark](https://www.wireshark.org) (öppen källkod och tillgängligt för Windows, Mac och Linux)
+2. Installera Wireshark och öppna den
+3. 
+- Windows: klickar på "Redigera" i det övre vänstra hörnet följt av "Inställningar"
+- Mac: klickar på "Wireshark" i det övre vänstra hörnet följt av "Inställningar"
+- I det nya fönstret klickar på "Name Resolution" och markerar de första 5 rutorna på höger sida ("Resolve MAC addresses" till "Use an external network name resolver")
+- Klicka på "OK" för att stänga fönstret
 
-### Tracking the source and destination of the data you exchange
-1. Download the network analysis tool Wireshark (open source and available for Windows, Mac and Linux) from https://www.wireshark.org
-2. Install Wireshark, open it, and click on "Edit" in the top left corner followed by "Preferences" 
-3. In the new window, click on "Name resolutions" and tick the first 5 boxes on the right side ("Resolve MAC adresses - Use an external network name resolver")
-4. Start recording your network use by clicking on the blue shark fin on the left of the upper menubar. Wireshark will now record the source, destination, and type of data for every data packet that is exchanged between your computer and another
-5. Surf the web as you usually would
-6. Click the stop button in the upper menubar of Wireshark to stop recording
-7. Go to "File" > "Export Packet Dissections", select "As CSV..." and save the CSV file somewhere that you can find it
+4. Börja spela in din nätverksanvändning genom att klicka på den blå hajfenan på vänster sidan av den övre menyraden. Wireshark registrerar nu källan, destinationen och datatypen för varje datapaket som utbyts mellan din dator och en annan
+5. Surfa på webben som vanligt
+6. Klicka på stoppknappen i den övre menyraden i Wireshark för att stoppa inspelningen
+7. Gå till "Arkiv"> "Exportera paket dissekeringar", välj "Som CSV ..." och spara CSV-filen någonstans där du hittar den
 
 ## Visualizing digital data infrastructures
 In the second part of this workshop, we will visualize the metadata we collected about the digital data exchanged between your computer and external servers during part 1.
