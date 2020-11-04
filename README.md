@@ -9,20 +9,23 @@ In addition to this, we will look at Internet Protocol (IP) addresses for the so
 
 ### What programs will we use?
 During this workshop, we will use Wireshark, Excel and a GeoIP database. 
-We chose Wireshark for this workshop, as it is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.
-
-Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
-
-IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
+- We chose Wireshark for this workshop, as it is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.
+- Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
+- IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
 
 ## Collecting metadata
 In the first part of this workshop, we will focus on collecting data packets and metadata. 
 All traffic on data networks like the internet consists of packets that are small chunks of data. We can use a process called packet sniffing to collect these pieces of metadata and to get a sense of the flows of data without looking at the content of the packets themselves.
 
 ### Tracking the source and destination of the data you exchange
-1. Download the network analysis tool Wireshark (open source and available for Windows, Mac and Linux) from https://www.wireshark.org
-2. Install Wireshark, open it, and click on "Edit" in the top left corner followed by "Preferences" 
-3. In the new window, click on "Name resolutions" and tick the first 5 boxes on the right side ("Resolve MAC adresses - Use an external network name resolver")
+1. Download the network analysis tool [Wireshark](https://www.wireshark.org) (open source and available for Windows, Mac and Linux)
+2. Install Wireshark and open it
+3.
+- Windows: click on "Edit" in the top left corner followed by "Preferences"
+- Mac: click on "Wireshark" in the top left corner followed by "Preferences"
+- In the new window, click on "Name Resolution" and tick the first 5 boxes on the right side ("Resolve MAC adresses" to "Use an external network name resolver")
+- Click "OK" to close the window
+
 4. Start recording your network use by clicking on the blue shark fin on the left of the upper menubar. Wireshark will now record the source, destination, and type of data for every data packet that is exchanged between your computer and another
 5. Surf the web as you usually would
 6. Click the stop button in the upper menubar of Wireshark to stop recording
