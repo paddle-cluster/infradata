@@ -20,48 +20,57 @@ All trafik på datanätverk som Internet består av paket som är små bitar av 
 ### Spåra källan och destinationen för den utbytta datan
 1. Ladda ner nätverksanalysverktyget [Wireshark](https://www.wireshark.org) (öppen källkod och tillgängligt för Windows, Mac och Linux)
 2. Installera Wireshark och öppna den
-3. 
-- Windows: klickar på "Redigera" i det övre vänstra hörnet följt av "Inställningar"
-- Mac: klickar på "Wireshark" i det övre vänstra hörnet följt av "Inställningar"
-- I det nya fönstret klickar på "Name Resolution" och markerar de första 5 rutorna på höger sida ("Resolve MAC addresses" till "Use an external network name resolver")
-- Klicka på "OK" för att stänga fönstret
+3. Klickar på "Redigera" (Windows) eller "Wireshark" (Mac) i det övre vänstra hörnet följt av "Inställningar"
+4. I det nya fönstret klickar på "Name Resolution" och markerar de första 5 rutorna på höger sida ("Resolve MAC addresses" till "Use an external network name resolver") följt av "OK" för att stänga fönstret
+5. Börja spela in din nätverksanvändning genom att klicka på den blå hajfenan på vänster sidan av den övre menyraden. Wireshark registrerar nu källan, destinationen och datatypen för varje datapaket som utbyts mellan din dator och en annan
+6. Surfa på webben som vanligt
+7. Klicka på stoppknappen i den övre menyraden i Wireshark för att stoppa inspelningen
+8. Gå till "Arkiv" > "Exportera paket dissekeringar", välj "Som CSV ..." och spara CSV-filen någonstans där du hittar den
 
-4. Börja spela in din nätverksanvändning genom att klicka på den blå hajfenan på vänster sidan av den övre menyraden. Wireshark registrerar nu källan, destinationen och datatypen för varje datapaket som utbyts mellan din dator och en annan
-5. Surfa på webben som vanligt
-6. Klicka på stoppknappen i den övre menyraden i Wireshark för att stoppa inspelningen
-7. Gå till "Arkiv"> "Exportera paket dissekeringar", välj "Som CSV ..." och spara CSV-filen någonstans där du hittar den
+## Visualisering av digitala datainfrastrukturer
+I den andra delen av denna workshop kommer vi att visualisera den metadata vi har samlat in.
 
-## Visualizing digital data infrastructures
-In the second part of this workshop, we will visualize the metadata we collected about the digital data exchanged between your computer and external servers during part 1.
+### Vem har du utbytt data med?
+**Windows:**
+1. Ladda ner och öppna följande <a href="/revealing_digital_infrastructure201103.xlsx" download="download"> Excel-fil </a>
+2. Gå till fliken "Data" i det medföljande kalkylarket och välj "Från text" i den övre vänstra cellen ("Hämta externa data")
+3. Leta upp filen du vill importera och klicka på "importera"
+4. Hitta och välj en av filerna du exporterade från Wireshark, se till att "Avgränsad" är markerad för filtyp och klicka på "Nästa"
+5. Se till att endast "Komma" är markerat för avgränsare och klicka på "Nästa" igen
+6. Lämna "Allmänt" valt för kolumndataformat och klicka på "Slutför"
+7. När "Data" har fyllt med de exporterade data från Wireshark, klicka på "Analysis" -fliken för att se resultaten!
 
-### Who have you exchanged data with?
-1. Download and open the following <a href="/revealing_digital_infrastructure201103.xlsx" download="download">Excel file</a>
-2. Mac: Go to the "Data" tab of the supplied spreadsheet and select the top left cell
-2. Windows: Go to the "Data" tab of the supplied spreadsheet and select "From Text" in the top left cell ("Get external data") 
-3. Mac: Go to "File"  > "Import", select "CSV file" and click on "Import"
-3. Windows: Look up the file you want to import and click on "import"
-4. Find and select one of the files you exported from Wireshark, make sure "Delimited" is selected for file type and click "Next"
-5. Make sure that only "Comma" is selected for delimiters and click "Next" again
-6. Leave "General" selected for column data format and click "Finish"
-7. Once the "Data" is filed with the exported data from Wireshark, click on the "Analysis" tab to see the results!
+**Mac**
+1. Ladda ner och öppna följande <a href="/revealing_digital_infrastructure201103.xlsx" download="download"> Excel-fil </a>
+2. Gå till fliken "Data" i det medföljande kalkylarket och välj cellen längst upp till vänster
+3. Gå till "Arkiv"> "Importera", välj "CSV-fil" och klicka på "Importera"
+4. Hitta och välj en av filerna du exporterade från Wireshark, se till att "Avgränsad" är markerad för filtyp och klicka på "Nästa"
+5. Se till att endast "Komma" är markerat för avgränsare och klicka på "Nästa" igen
+6. Lämna "Allmänt" valt för kolumndataformat och klicka på "Slutför"
+7. När "Data" har fyllt med de exporterade data från Wireshark, klicka på "Analysis" -fliken för att se resultaten!
 
-### Where have you exchanged data with?
-Now that we have an idea about the data packets that are sent and received, we will look at the geographical distribution. By using the GeoIP we can map the infrastructure that is involved while a platform or service is in use.
+### Var har du utbytt data med?
+Nu när vi har en uppfattning om de datapaket som skickas och tas emot kommer vi att titta på deras geografiska fördelningen. Genom att använda GeoIP kan vi kartlägga infrastrukturen som är involverad medan en plattform eller tjänst används.
 
-1.	Download the following GeoIP database files: 
+1.	Ladda ner följande GeoIP-databasfiler: 
 -  <a href="/GeoLite2-ASN.mmdb" download="download">GeoLite2-ASN</a>
 -  <a href="/GeoLite2-Country.mmdb" download="download">GeoLite2-Country</a>
 
-The GeoLite2 data contained in the files is created by MaxMind and available from <a href="https://www.maxmind.com">https://www.maxmind.com</a>
+GeoLite2-datan i filerna skapas av MaxMind och är tillgänglig från <a href="https://www.maxmind.com">https://www.maxmind.com</a>
 
-(Optional: Go to the Wireshark folder (e.g.: C:\Program Files\Wireshark) Create a folder called “GeoIp” and copy & paste the two files into the new folder) 
+(Valfritt: Gå till mappen Wireshark (t.ex. C: \ Programfiler \ Wireshark). Skapa en mapp som heter “GeoIP” och kopiera och klistra in de två filerna i den nya mappen)
 
-2.	In Wireshark, go to 'Edit→Preferences→Name Resolution'  
-3.	Click 'Edit' next to 'Max Mind database directories' Choose the folder that you put the downloaded Geolite2 database in (if you followed the optional step, choose “C:\Program Files\Wireshark\GeoIP) 
-4.	Go to 'Statistics→Endpoints'  
-5.	On the top of the new window, make sure IPv4 is selected (you can try IPv6 as well, but the newer IP standard usually has less traceable addresses)  
-6.	At the bottom of the window, click 'Map→Open in browser'
+**Windows**
+2. I Wireshark, gå till Redigera → Inställningar → Namnupplösning
 
-## Bonus activity
-Repeat the steps, but this time do not visit any social media webpages (e.g. Facebook, Youtube…)
-How do the visualizations of the digital data infrastructure change? Are the same providers involved or have some disapeared?
+**Mac**
+2. I Wireshark, gå till Wireshark → Inställningar → Namnupplösning
+
+3. Klicka på Redigera bredvid Max Mind-databaskataloger och välj den mapp som du satte den nedladdade Geolite2-databasen i (om du följde det valfria steget, välj C: \ Program Files \ Wireshark \ GeoIP)
+4. Gå till Statistik → Slutpunkter
+5. Se till att IPv4 är markerat högst upp i det nya fönstret (du kan också prova IPv6, men den nyare IP-standarden har vanligtvis mindre spårbara adresser)
+6. Längst ner i fönstret klickar du på Karta → Öppna i webbläsaren
+
+## Bonusaktivitet
+Upprepa stegen, men den här gången besöka inga sociala medier (t.ex. Facebook, Youtube ...)
+Hur förändras visualiseringarna av den digitala datainfrastrukturen? Är samma leverantörer inblandade eller har några försvunnit?
