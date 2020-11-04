@@ -60,10 +60,10 @@ The GeoLite2 data contained in the files is created by MaxMind and available fro
 
 (Optional: Go to the Wireshark folder (e.g.: C:\Program Files\Wireshark) Create a folder called “GeoIp” and copy & paste the two files into the new folder) 
 
-**Windows**
+<p>**Windows**</p>
 2.	In Wireshark, go to Edit→Preferences→Name Resolution
 
-**Mac**
+<p>**Mac**</p>
 2.	In Wireshark, go to Wireshark→Preferences→Name Resolution
 
 3.	Click Edit next to Max Mind database directories and choose the folder that you put the downloaded Geolite2 database in (if you followed the optional step, choose C:\Program Files\Wireshark\GeoIP) 
