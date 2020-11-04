@@ -33,8 +33,8 @@ In the second part of this workshop, we will visualize the metadata we have coll
 ### Who have you exchanged data with?
 **Windows**
 1. Download and open the following <a href="/revealing_digital_infrastructure201103.xlsx" download="download">Excel file</a>
-2. Windows: Go to the "Data" tab of the supplied spreadsheet and select "From Text" in the top left cell ("Get external data") 
-3. Windows: Look up the file you want to import and click on "import"
+2. Go to the "Data" tab of the supplied spreadsheet and select "From Text" in the top left cell ("Get external data") 
+3. Look up the file you want to import and click on "import"
 4. Find and select one of the files you exported from Wireshark, make sure "Delimited" is selected for file type and click "Next"
 5. Make sure that only "Comma" is selected for delimiters and click "Next" again
 6. Leave "General" selected for column data format and click "Finish"
@@ -42,8 +42,8 @@ In the second part of this workshop, we will visualize the metadata we have coll
 
 **Mac**
 1. Download and open the following <a href="/revealing_digital_infrastructure201103.xlsx" download="download">Excel file</a>
-2. Mac: Go to the "Data" tab of the supplied spreadsheet and select the top left cell
-3. Mac: Go to "File"  > "Import", select "CSV file" and click on "Import"
+2. Go to the "Data" tab of the supplied spreadsheet and select the top left cell
+3. Go to "File"  > "Import", select "CSV file" and click on "Import"
 4. Find and select one of the files you exported from Wireshark, make sure "Delimited" is selected for file type and click "Next"
 5. Make sure that only "Comma" is selected for delimiters and click "Next" again
 6. Leave "General" selected for column data format and click "Finish"
