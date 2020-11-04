@@ -56,16 +56,11 @@ Nu när vi har en uppfattning om de datapaket som skickas och tas emot kommer vi
 -  <a href="/GeoLite2-ASN.mmdb" download="download">GeoLite2-ASN</a>
 -  <a href="/GeoLite2-Country.mmdb" download="download">GeoLite2-Country</a>
 
-GeoLite2-datan i filerna skapas av MaxMind och är tillgänglig från <a href="https://www.maxmind.com">https://www.maxmind.com</a>
-
 (Valfritt: Gå till mappen Wireshark (t.ex. C: \ Programfiler \ Wireshark). Skapa en mapp som heter “GeoIP” och kopiera och klistra in de två filerna i den nya mappen)
 
-**Windows**
-2. I Wireshark, gå till Redigera → Inställningar → Namnupplösning
+GeoLite2-datan i filerna skapas av MaxMind och är tillgänglig från <a href="https://www.maxmind.com">https://www.maxmind.com</a>
 
-**Mac**
-2. I Wireshark, gå till Wireshark → Inställningar → Namnupplösning
-
+2. **Windows:** I Wireshark, gå till Redigera → Inställningar → Namnupplösning | **Mac:** I Wireshark, gå till Wireshark → Inställningar → Namnupplösning
 3. Klicka på Redigera bredvid Max Mind-databaskataloger och välj den mapp som du satte den nedladdade Geolite2-databasen i (om du följde det valfria steget, välj C: \ Program Files \ Wireshark \ GeoIP)
 4. Gå till Statistik → Slutpunkter
 5. Se till att IPv4 är markerat högst upp i det nya fönstret (du kan också prova IPv6, men den nyare IP-standarden har vanligtvis mindre spårbara adresser)
