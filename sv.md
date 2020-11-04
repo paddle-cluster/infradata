@@ -1,4 +1,4 @@
-[English](/README.md) | [Svenska](/sv.md) | Deutsche | Espanõl
+[English](/README.md) | Svenska | Deutsche | Espanõl
 
 # Avslöjar digitala datainfrastrukturer
 Denna workshop ger en introduktion till hur man kan göra en del grundläggande analyser av data som utbyts mellan en dator och onlineservrar när man använder plattformar eller tjänster (t.ex. sociala medier, lärplattformer osv.). Vi kommer att använda metoder för att avslöja infrastrukturer, datapaketströmmar och IP-geolokalisering.
