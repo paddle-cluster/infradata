@@ -55,17 +55,11 @@ Now that we have an idea about the data packets that are sent and received, we w
 1.	Download the following GeoIP database files: 
 -  <a href="/GeoLite2-ASN.mmdb" download="download">GeoLite2-ASN</a>
 -  <a href="/GeoLite2-Country.mmdb" download="download">GeoLite2-Country</a>
-
+(Optional: Go to the Wireshark folder (e.g.: C:\Program Files\Wireshark) Create a folder called “GeoIp” and copy & paste the two files into the new folder)
 The GeoLite2 data contained in the files is created by MaxMind and available from <a href="https://www.maxmind.com">https://www.maxmind.com</a>
 
-(Optional: Go to the Wireshark folder (e.g.: C:\Program Files\Wireshark) Create a folder called “GeoIp” and copy & paste the two files into the new folder) 
-
-**Windows**
-2.	In Wireshark, go to Edit→Preferences→Name Resolution
-
-**Mac**
-2.	In Wireshark, go to Wireshark→Preferences→Name Resolution
-
+2.	**Windows:** In Wireshark, go to Edit→Preferences→Name Resolution
+2.	**Mac:** In Wireshark, go to Wireshark→Preferences→Name Resolution
 3.	Click Edit next to Max Mind database directories and choose the folder that you put the downloaded Geolite2 database in (if you followed the optional step, choose C:\Program Files\Wireshark\GeoIP) 
 4.	Go to Statistics→Endpoints  
 5.	On the top of the new window, make sure IPv4 is selected (you can try IPv6 as well, but the newer IP standard usually has less traceable addresses)  
