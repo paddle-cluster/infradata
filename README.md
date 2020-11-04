@@ -1,4 +1,4 @@
-[English](/README.md) | [Svenska](/sv.md) | Deutsche | Espanõl
+English | [Svenska](/sv.md) | Deutsche | Espanõl
 
 # Revealing digital data infrastructures
 This workshop gives an introduction to how you can do some basic analysis of the data that is exchanged between a computer and online servers when using particular platforms or services (e.g. social media, learning management systems, etc). We will use approaches to uncovering infrastructures, data packet streams and IP geolocation.
