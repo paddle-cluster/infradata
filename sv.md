@@ -85,5 +85,4 @@ Nu har vi sett vilka leverantör som data har utbytts med och har en uppfattning
 5. Tryck på enter och se när datorn spårar vägen mellan din dator och servern
 
 ## Bonusaktivitet
-Upprepa stegen, men den här gången besöka inga sociala medier (t.ex. Facebook, Youtube ...)
-Hur förändras visualiseringarna av den digitala datainfrastrukturen? Är samma leverantörer inblandade eller har några försvunnit?
+Upprepa stegen, men den här gången besöka inga sociala medier (t.ex. Facebook, Youtube ...). Hur förändras visualiseringarna av den digitala datainfrastrukturen? Är samma leverantörer inblandade eller har några försvunnit?
