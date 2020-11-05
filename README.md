@@ -66,6 +66,24 @@ The GeoLite2 data contained in the files is created by MaxMind and available fro
 5.	On the top of the new window, make sure IPv4 is selected (you can try IPv6 as well, but the newer IP standard usually has less traceable addresses)  
 6.	At the bottom of the window, click Map→Open in browser
 
+### Where have your packets been on the way?
+Now we have seen which providers data has been exchanged with and have an idea of where their servers are, but that isn't the whole story. As data packets travel across the internet, they hop between different networks leaving a trace of where they have been. Using a technique called traceroute we can reveal the different networks that data packets travel on between our own computers and a particular server.
+
+**Windows:**
+1. Go to Excel and bring up the Data tab in the revealing_digital_infrastructure file
+2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often).
+3. Open the Windows search box and type "CMD"
+4. Open the Command Prompt app
+5. In the Command Prompt app type "tracert" followed by a space and the address from the Excel e.g. tracert google.com
+6. Press enter and watch as the computer traces the route between your computer and the server
+
+**Mac**
+1. Go to Excel and bring up the Data tab in the revealing_digital_infrastructure file
+2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often).
+3. Open the Terminal app, either through the Applications→Utilities folder or through Spotlight (search)
+4. In the Terminal write "traceroute" followed by a space and then the address from Excel e.g. traceroute google.com
+5. Press enter and watch as the computer traces the route between your computer and the server
+
 ## Bonus activity
 Repeat the steps, but this time do not visit any social media webpages (e.g. Facebook, Youtube…)
 How do the visualizations of the digital data infrastructure change? Are the same providers involved or have some disapeared?
