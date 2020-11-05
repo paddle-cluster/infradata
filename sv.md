@@ -77,7 +77,7 @@ Nu har vi sett vilka leverantör som data har utbytts med och har en uppfattning
 5. Skriv "tracert" i kommandotolken-appen följt av ett mellanslag och adressen från Excel, t.ex. tracert google.com
 6. Tryck på enter och se när datorn spårar vägen mellan din dator och servern
 
-**Mac**
+**Mac:**
 1. Gå till Excel och öppna fliken "Data" i filen avslöjande_digital_infrastruktur
 2. Välj en av adresserna i kolumnen Source eller Destination och kopiera den. Var noga med att inte välja din egen dators adress (det är den som visas oftast)
 3. Öppna Terminal-appen, antingen genom mappen Program → Verktyg eller genom Spotlight (sök)
