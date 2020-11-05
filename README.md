@@ -85,6 +85,5 @@ Now we have seen which providers data has been exchanged with and have an idea o
 5. Press enter and watch as the computer traces the route between your computer and the server
 
 ## Bonus activity
-Repeat the steps, but this time do not visit any social media webpages (e.g. Facebook, Youtube…)
-How do the visualizations of the digital data infrastructure change? Are the same providers involved or have some disapeared?
+Repeat the steps, but this time do not visit any social media webpages (e.g. Facebook, Youtube…). How do the visualizations of the digital data infrastructure change? Are the same providers involved or have some disapeared?
 
