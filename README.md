@@ -77,7 +77,7 @@ Now we have seen which providers data has been exchanged with and have an idea o
 5. In the Command Prompt app type "tracert" followed by a space and the address from the Excel e.g. tracert google.com
 6. Press enter and watch as the computer traces the route between your computer and the server
 
-**Mac**
+**Mac:**
 1. Go to Excel and bring up the Data tab in the revealing_digital_infrastructure file
 2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often).
 3. Open the Terminal app, either through the Applications→Utilities folder or through Spotlight (search)
