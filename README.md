@@ -8,7 +8,7 @@ All traffic on data networks like the internet consists of packets that are smal
 In addition to this, we will look at Internet Protocol (IP) addresses for the source and destination of each packet of data that was exchanged. Using databases that link those IP addresses to geographic locations, we can map the infrastructure that is involved while a platform or service is in use.
 
 ### What programs will we use?
-During this workshop, we will use Wireshark, Excel and a GeoIP database. 
+During this workshop, we will use Wireshark, Excel, a GeoIP database, and your computer's terminal. 
 - We chose Wireshark for this workshop, as it is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.
 - Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
 - IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
@@ -71,7 +71,7 @@ Now we have seen which providers data has been exchanged with and have an idea o
 
 **Windows:**
 1. Go to Excel and bring up the Data tab in the revealing_digital_infrastructure file
-2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often).
+2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often)
 3. Open the Windows search box and type "CMD"
 4. Open the Command Prompt app
 5. In the Command Prompt app type "tracert" followed by a space and the address from the Excel e.g. tracert google.com
