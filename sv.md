@@ -66,6 +66,24 @@ GeoLite2-datan i filerna skapas av MaxMind och är tillgänglig från <a href="h
 5. Se till att IPv4 är markerat högst upp i det nya fönstret (du kan också prova IPv6, men den nyare IP-standarden har vanligtvis mindre spårbara adresser)
 6. Längst ner i fönstret klickar du på Karta → Öppna i webbläsaren
 
+### Var har dina paket varit på väg?
+Nu har vi sett vilka leverantör som data har utbytts med och har en uppfattning om var deras servrar är, men det är inte hela historien. När datapaket reser över internet hoppar de mellan olika nätverk och lämnar spår av var de har varit. Med hjälp av en teknik som kallas traceroute kan vi avslöja de olika nätverk som datapaket reser mellan våra egna datorer och en viss server.
+
+**Windows:**
+1. Gå till Excel och öppna fliken "Data" i filen avslöjande_digital_infrastruktur
+2. Välj en av adresserna i kolumnen Source eller Destination och kopiera den. Var noga med att inte välja din egen dators adress (det är den som visas oftast)
+3. Öppna Windows-sökrutan och skriv "CMD"
+4. Öppna appen Kommandotolken
+5. Skriv "tracert" i kommandotolken-appen följt av ett mellanslag och adressen från Excel, t.ex. tracert google.com
+6. Tryck på enter och se när datorn spårar vägen mellan din dator och servern
+
+**Mac**
+1. Gå till Excel och öppna fliken "Data" i filen avslöjande_digital_infrastruktur
+2. Välj en av adresserna i kolumnen Source eller Destination och kopiera den. Var noga med att inte välja din egen dators adress (det är den som visas oftast)
+3. Öppna Terminal-appen, antingen genom mappen Program → Verktyg eller genom Spotlight (sök)
+4. Skriv "traceroute" i terminalen följt av ett mellanslag och sedan adressen från Excel t.ex. spåra google.com
+5. Tryck på enter och se när datorn spårar vägen mellan din dator och servern
+
 ## Bonusaktivitet
 Upprepa stegen, men den här gången besöka inga sociala medier (t.ex. Facebook, Youtube ...)
 Hur förändras visualiseringarna av den digitala datainfrastrukturen? Är samma leverantörer inblandade eller har några försvunnit?
