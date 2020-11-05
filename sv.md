@@ -8,7 +8,7 @@ All trafik på datanätverk inklusiv Internet består av paket som är små bita
 Utöver detta kommer vi att titta på IP-adresser (Internet Protocol) för källan och destinationen för varje datapaket som utbyttes. Med hjälp av databaser som länkar dessa IP-adresser till geografiska platser kan vi kartlägga den infrastruktur som är involverad medan en plattform eller tjänst används.
 
 ### Vilka mjukvaror kommer vi att använda?
-Under denna workshop kommer vi att använda Wireshark, Excel och en GeoIP-databas.
+Under denna workshop kommer vi att använda Wireshark, Excel, en GeoIP-databas, och datorns terminal.
 - Vi valde Wireshark för denna workshop, eftersom det är en gratis och öppen källkodspaketanalysator. Den används för felsökning av nätverk, analys, utveckling av programvara och kommunikationsprotokoll och utbildning..
 - Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
 - IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
