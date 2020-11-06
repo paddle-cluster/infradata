@@ -27,11 +27,8 @@ All trafik på datanätverk som Internet består av paket som är små bitar av 
 7. Klicka på stoppknappen i den övre menyraden i Wireshark för att stoppa inspelningen
 8. Gå till "Arkiv" > "Exportera paket dissekeringar", välj "Som CSV ..." och spara CSV-filen någonstans där du hittar den
 
-## Visualisering av digitala datainfrastrukturer
-I den andra delen av denna workshop kommer vi att visualisera den metadata vi har samlat in.
-
-### Vem har du utbytt data med?
-**Windows:**
+## Vem har du utbytt data med?
+### Windows:
 1. Ladda ner och öppna följande <a href="/revealing_digital_infrastructure201103.xlsx" download="download"> Excel-fil </a>
 2. Gå till fliken "Data" i det medföljande kalkylarket och välj "Från text" i den övre vänstra cellen ("Hämta externa data")
 3. Leta upp filen du vill importera och klicka på "importera"
@@ -40,7 +37,7 @@ I den andra delen av denna workshop kommer vi att visualisera den metadata vi ha
 6. Lämna "Allmänt" valt för kolumndataformat och klicka på "Slutför"
 7. När "Data" har fyllt med de exporterade data från Wireshark, klicka på "Analysis" -fliken för att se resultaten!
 
-**Mac**
+## Mac:
 1. Ladda ner och öppna följande <a href="/revealing_digital_infrastructure201103.xlsx" download="download"> Excel-fil </a>
 2. Gå till fliken "Data" i det medföljande kalkylarket och välj cellen längst upp till vänster
 3. Gå till "Arkiv"> "Importera", välj "CSV-fil" och klicka på "Importera"
@@ -49,7 +46,7 @@ I den andra delen av denna workshop kommer vi att visualisera den metadata vi ha
 6. Lämna "Allmänt" valt för kolumndataformat och klicka på "Slutför"
 7. När "Data" har fyllt med de exporterade data från Wireshark, klicka på "Analysis" -fliken för att se resultaten!
 
-### Var har du utbytt data med?
+## Var har du utbytt data med?
 Nu när vi har en uppfattning om de datapaket som skickas och tas emot kommer vi att titta på deras geografiska fördelningen. Genom att använda GeoIP kan vi kartlägga infrastrukturen som är involverad medan en plattform eller tjänst används.
 
 1.	Ladda ner följande GeoIP-databasfiler: 
@@ -66,10 +63,10 @@ GeoLite2-datan i filerna skapas av MaxMind och är tillgänglig från <a href="h
 5. Se till att IPv4 är markerat högst upp i det nya fönstret (du kan också prova IPv6, men den nyare IP-standarden har vanligtvis mindre spårbara adresser)
 6. Längst ner i fönstret klickar du på Karta → Öppna i webbläsaren
 
-### Var har dina paket varit på väg?
+## Var har dina paket varit på väg?
 Nu har vi sett vilka leverantör som data har utbytts med och har en uppfattning om var deras servrar är, men det är inte hela historien. När datapaket reser över internet hoppar de mellan olika nätverk och lämnar spår av var de har varit. Med hjälp av en teknik som kallas traceroute kan vi avslöja de olika nätverk som datapaket reser mellan våra egna datorer och en viss server.
 
-**Windows:**
+### Windows:
 1. Gå till Excel och öppna fliken "Data" i filen avslöjande_digital_infrastruktur
 2. Välj en av adresserna i kolumnen Source eller Destination och kopiera den. Var noga med att inte välja din egen dators adress (det är den som visas oftast)
 3. Öppna Windows-sökrutan och skriv "CMD"
@@ -77,7 +74,7 @@ Nu har vi sett vilka leverantör som data har utbytts med och har en uppfattning
 5. Skriv "tracert" i kommandotolken-appen följt av ett mellanslag och adressen från Excel, t.ex. tracert google.com
 6. Tryck på enter och se när datorn spårar vägen mellan din dator och servern
 
-**Mac:**
+### Mac:
 1. Gå till Excel och öppna fliken "Data" i filen avslöjande_digital_infrastruktur
 2. Välj en av adresserna i kolumnen Source eller Destination och kopiera den. Var noga med att inte välja din egen dators adress (det är den som visas oftast)
 3. Öppna Terminal-appen, antingen genom mappen Program → Verktyg eller genom Spotlight (sök)
