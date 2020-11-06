@@ -27,11 +27,8 @@ All traffic on data networks like the internet consists of packets that are smal
 7. Click the stop button in the upper menubar of Wireshark to stop recording
 8. Go to "File" > "Export Packet Dissections", select "As CSV..." and save the CSV file somewhere that you can find it
 
-## Visualizing digital data infrastructures
-In the second part of this workshop, we will visualize the metadata we have collected.
-
-### Who have you exchanged data with?
-**Windows**
+## Who have you exchanged data with?
+### Windows:
 1. Download and open the following <a href="/revealing_digital_infrastructure201103.xlsx" download="download">Excel file</a>
 2. Go to the "Data" tab of the supplied spreadsheet and select "From Text" in the top left cell ("Get external data") 
 3. Look up the file you want to import and click on "import"
@@ -40,7 +37,7 @@ In the second part of this workshop, we will visualize the metadata we have coll
 6. Leave "General" selected for column data format and click "Finish"
 7. Once the "Data" is filed with the exported data from Wireshark, click on the "Analysis" tab to see the results!
 
-**Mac**
+### Mac:
 1. Download and open the following <a href="/revealing_digital_infrastructure201103.xlsx" download="download">Excel file</a>
 2. Go to the "Data" tab of the supplied spreadsheet and select the top left cell
 3. Go to "File"  > "Import", select "CSV file" and click on "Import"
@@ -49,7 +46,7 @@ In the second part of this workshop, we will visualize the metadata we have coll
 6. Leave "General" selected for column data format and click "Finish"
 7. Once the "Data" is filed with the exported data from Wireshark, click on the "Analysis" tab to see the results!
 
-### Where have you exchanged data with?
+## Where have you exchanged data with?
 Now that we have an idea about the data packets that are sent and received, we will look at the geographical distribution. By using the GeoIP we can map the infrastructure that is involved while a platform or service is in use.
 
 1.	Download the following GeoIP database files: 
@@ -66,10 +63,10 @@ The GeoLite2 data contained in the files is created by MaxMind and available fro
 5.	On the top of the new window, make sure IPv4 is selected (you can try IPv6 as well, but the newer IP standard usually has less traceable addresses)  
 6.	At the bottom of the window, click Map→Open in browser
 
-### Where have your packets been on the way?
+## Where have your packets been on the way?
 Now we have seen which providers data has been exchanged with and have an idea of where their servers are, but that isn't the whole story. As data packets travel across the internet, they hop between different networks leaving a trace of where they have been. Using a technique called traceroute we can reveal the different networks that data packets travel on between our own computers and a particular server.
 
-**Windows:**
+### Windows:
 1. Go to Excel and bring up the Data tab in the revealing_digital_infrastructure file
 2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often)
 3. Open the Windows search box and type "CMD"
@@ -77,7 +74,7 @@ Now we have seen which providers data has been exchanged with and have an idea o
 5. In the Command Prompt app type "tracert" followed by a space and the address from the Excel e.g. tracert google.com
 6. Press enter and watch as the computer traces the route between your computer and the server
 
-**Mac:**
+### Mac:
 1. Go to Excel and bring up the Data tab in the revealing_digital_infrastructure file
 2. Choose one of the addresses listed in either the Source or Destination column and copy it. Be sure not to choose your own computer's address (that's the one that appears most often).
 3. Open the Terminal app, either through the Applications→Utilities folder or through Spotlight (search)
