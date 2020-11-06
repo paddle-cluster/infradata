@@ -37,7 +37,7 @@ All trafik på datanätverk som Internet består av paket som är små bitar av 
 6. Lämna "Allmänt" valt för kolumndataformat och klicka på "Slutför"
 7. När "Data" har fyllt med de exporterade data från Wireshark, klicka på "Analysis" -fliken för att se resultaten!
 
-## Mac:
+### Mac:
 1. Ladda ner och öppna följande <a href="/revealing_digital_infrastructure201103.xlsx" download="download"> Excel-fil </a>
 2. Gå till fliken "Data" i det medföljande kalkylarket och välj cellen längst upp till vänster
 3. Gå till "Arkiv"> "Importera", välj "CSV-fil" och klicka på "Importera"
