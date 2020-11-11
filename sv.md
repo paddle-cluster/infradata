@@ -9,9 +9,9 @@ Utöver detta kommer vi att titta på IP-adresser (Internet Protocol) för käll
 
 ### Vilka mjukvaror kommer vi att använda?
 Under denna workshop kommer vi att använda Wireshark, ett kalkylark (Excel fungerar bäst, men Google Sheets, LibreOffice och Numbers fungerar med lite justering), en GeoIP-databas, och datorns terminal.
-- Vi valde Wireshark för denna workshop, eftersom det är en gratis och öppen källkodspaketanalysator. Den används för felsökning av nätverk, analys, utveckling av programvara och kommunikationsprotokoll och utbildning..
-- Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
-- IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
+- Vi valde Wireshark för denna workshop, eftersom det är en gratis och öppen källkodspaketanalysator. Den används för felsökning av nätverk, analys, utveckling av programvara och kommunikationsprotokoll och utbildning.
+- Microsoft Excel är ett kalkylprogram som innehåller bland annat beräkning, diagramverktyg, pivottabeller. Excel valdes, eftersom det har varit ett mycket allmänt tillämpat kalkylark. 
+- IP Geolocations används för att försöka upptäcka en IP-adresss geografiska läge. En IP-adress, kort för internetprotokolladress, är en serie nummer som automatiskt tilldelas varje enhet som ansluter till ett datornätverk. För denna workshop valde vi GeoIP-databasen från Maxmind.
 
 ## Samlar in metadata
 I den första delen av denna workshop kommer vi att fokusera på att samla in datapaket och metadata.
