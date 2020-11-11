@@ -8,7 +8,7 @@ All traffic on data networks like the internet consists of packets that are smal
 In addition to this, we will look at Internet Protocol (IP) addresses for the source and destination of each packet of data that was exchanged. Using databases that link those IP addresses to geographic locations, we can map the infrastructure that is involved while a platform or service is in use.
 
 ### What programs will we use?
-During this workshop, we will use Wireshark, Excel, a GeoIP database, and your computer's terminal. 
+During this workshop, we will use Wireshark, a spreadsheet (Excel works best, but Google Sheets, LibreOffice and Numbers work with a little tweaking), a GeoIP database, and your computer's terminal. 
 - We chose Wireshark for this workshop, as it is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education.
 - Microsoft Excel is a spreadsheet program that features among others calculation, graphing tools, pivot tables. Excel was chosen, as it has been a very widely applied spreadsheet. 
 - IP Geolocations are used to attempt to discover the geographical location of an IP address. An IP address, short for internet protocol address, is a series of numbers that is automatically assigned to each device connecting to a computer network. For this workshop, we chose the GeoIP database provided by Maxmind.
